@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+      <!-- main "FLEX"内に記述-->
+    <div class="flex">
+      <Sidemenu />
+      <Introduction />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/Header.vue'
+import Sidemenu from './components/Sidemenu.vue'
+import Introduction from './components/Introductioin.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Sidemenu,
+    Introduction
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+  background-color:#000000;
+  color:white;
+}
+.flex{
+  display: flex;
 }
 </style>
+https://github.com/ttori-san/English-LP_1.git
