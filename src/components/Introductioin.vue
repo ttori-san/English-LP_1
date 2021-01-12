@@ -4,7 +4,7 @@
       <img class="intro-person" src="../assets/5e5350e2d87131d9ff0acac5_peep-6.png" />
       <div class="today's phrase">
         <p class="phrase-template">Today's phrase is...</p>
-        <p class="variable-input-area">{{phrase}}</p>
+        <p class="variable-input-area" :todaysPhrase="sendText">{{sendText}}</p>
       </div>
     </div>
   </div>
@@ -29,7 +29,6 @@
   border-style: none;
   border-bottom: white solid 3px;
   border-radius: 0%;
-  background:black;
 }
 </style>
 
@@ -37,7 +36,7 @@
 export default {
   data(){
     return{
-      phrase:"Christmasssssss"
+      sendText:"nebulous"
     }
   }
 }

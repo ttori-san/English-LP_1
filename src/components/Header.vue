@@ -12,7 +12,7 @@
   height:100px;
   width:auto;
   color: white;
-  background: #08ad5e;
+  background: #20b974;
 
   padding-left:40%;
   align-items:center;
